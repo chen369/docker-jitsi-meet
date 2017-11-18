@@ -4,11 +4,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 RUN apt-get update; apt-get -y install gnupg
 RUN apt-get update && \
-	apt-get install -y wget dnsutils vim telnet nginx && \
+	apt-get install -y wget dnsutils vim telnet && \
 	echo 'deb http://download.jitsi.org stable/' >> /etc/apt/sources.list && \
 	wget -qO - http://download.jitsi.org/jitsi-key.gpg.key | apt-key add - && \
 	apt-get update && \
-	apt-get -y install jitsi-meet && \
 	apt-get clean
 
 #ENV PUBLIC_HOSTNAME=192.168.59.103
