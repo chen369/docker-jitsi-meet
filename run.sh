@@ -10,9 +10,5 @@ fi
 
 cd /etc/init.d/
 
-./prosody restart && \
-./jitsi-videobridge restart && \
-./jicofo restart && \
-./nginx restart
 
 tail -f $LOG
