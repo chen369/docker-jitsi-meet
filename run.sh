@@ -3,8 +3,7 @@ unset DEBIAN_FRONTEND
 export LOG=/var/log/jitsi/jvb.log
 
 if [ ! -f "$LOG" ]; then
-apt-get -y install jitsi-meet
-
+echo "Please Run Install.sh"
 	touch $LOG && \
 	chown jvb:jitsi $LOG
 fi
