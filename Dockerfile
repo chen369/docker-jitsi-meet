@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:artful
 MAINTAINER Roberto Andrade <roberto@cloud.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
